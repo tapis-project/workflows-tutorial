@@ -1,8 +1,9 @@
 # Creating a Pipeline
----
 
 For this section, we will be using TapisUI to create our workflow resources.
 This UI can be found at the following URL: https://training.tapis.io/tapis-ui/#/
+
+---
 
 ### Step 1: Log In and Explore
 
@@ -14,11 +15,65 @@ In the left sidebar of the Dashboard page, you will see tabs to pages where you 
 
 ![Workflows Nav](./images/02-navbar.png)
 
+---
+
 ### Step 2: Navigate to the Workflows Page
 
 Now click the `Workflows` tab to navigate to the Workflows page. On this page, click the add group button in the toolbar below the workflows navbar.
 
+---
 
+### Step 3: Create a Group
+
+![Workflows Nav](./images/03-click-create-group.png)
+
+---
+
+![Workflows Nav](./images/04-create-group.png)
+
+---
+
+### Step 4: Create a Pipeline
+
+![Workflows Nav](./images/05-navigate-to-pipeline.png)
+
+---
+
+![Workflows Nav](./images/06-click-create-pipeline.png)
+
+---
+
+![Workflows Nav](./images/07-create-pipeline.png)
+
+---
+
+### Step 5: Add an 'image_build' Task to the Pipeline
+
+![Workflows Nav](./images/08-edit-pipeline.png)
+
+---
+
+![Workflows Nav](./images/09-click-add-task.png)
+
+---
+
+![Workflows Nav](./images/10-select-image-build.png)
+
+---
+
+![Workflows Nav](./images/11-select-builder.png)
+
+---
+
+![Workflows Nav](./images/12-github-context.png)
+
+---
+
+![Workflows Nav](./images/13-context-visibility.png)
+
+---
+
+![Workflows Nav](./images/14-destination.png)
 
 
 
