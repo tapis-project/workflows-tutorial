@@ -20,7 +20,7 @@ In the left sidebar of the Dashboard page, you will see tabs to pages where you 
 
 In order to create your first `Pipeline`, you must first belong to a `Group`
 
-`Groups` are collections of users that own workflow resources. The user creating the group will be added to the user list by default with `owner` and has total control over all resources owned by it. 
+`Groups` are collections of users that own workflow resources. The user creating the group will be added to the user list by default with `owner` permissions and has total control over all resources owned by it. 
 
 Additional users can be added to the group with either basic or administrative permissions. Basic users can create their own pipelines, tasks, archives, etc, and run the other pipelines in the group. Administrators can delete pipelines owned by other users but cannot delete the group.
 
@@ -83,25 +83,37 @@ Choose the `image_build` option and click the `Next >` button
 
 ![Workflows Nav](./images/10-select-image-build.png)
 
-Fill out the `task id` and `description` fields. Then for the builder dropdown, select the `kaniko` option. Kaniko is a containerized image builder that allows you to create OCI compliant images from within a container without Docker
+Fill out the `task id` and `description` fields. Then for the builder dropdown, select the `kaniko` option. Kaniko is a containerized image builder that allows you to create OCI compliant images from within a container without Docker.
 
 ![Workflows Nav](./images/11-select-builder.png)
 
-The next step is to set up the image build `context` aka the source of the image build. Once finished, the context contain all of the data needed to access and pull the MPM source from Github.
+The next step is to set up the image build `context` aka the source of the image build. Once finished, the context will contain all of the data needed to access and pull the MPM source from Github.
 
-First, select `github` option from the `source` dropdown. This will generate some new fields. Fill them out with the exact values below:\
-* `url` `joestubbs/mpm-container`
-* `branch` `master`
-* `build file path` `Dockerfile`
-8 `sub path` LEAVE EMPTY!
+First, select `github` option from the `source` dropdown. This will generate some new fields. Fill them out with the exact values below:
+* **url** `joestubbs/mpm-container`
+* **branch** `master`
+* **build file path** `Dockerfile`
+* **sub path** LEAVE EMPTY!
 
 ![Workflows Nav](./images/12-github-context.png)
 
----
+In the `Visibility and Credentials` section of the context, select the `public` option
 
 ![Workflows Nav](./images/13-context-visibility.png)
 
----
+Next, we will need to create the `Destination` of the image. This will be the Dockerhub repository that you set up beforehand.
+
+NOTE: This step requires that you have a Dockerhub repository and have created an access token with write/push permissions that will allow the Workflow Engine to push the image on your behalf.
+
+Select the `dockerhub` option from the destination dropdown.\
+
+In the **url** field, put the url to your repository and image. It will follow the format `<repository>/<image_name>`.\
+
+In the **image_tag** field, put any tag you want. `dev` or `latest` would be sufficient for this tutorial.\
+
+In the `Credential Source` section, select the `Provide credentials` radio button. This will generate 2 new fields: **username** and **access token**. For **username**, put your Dockerhub username, and for **access_token** put the Dockerhub access token.
+
+Once all fields are populated, click the `Create Task` button at the bottom right and close out the modal once the task is successfully created.
 
 ![Workflows Nav](./images/14-destination.png)
 
