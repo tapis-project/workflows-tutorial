@@ -139,7 +139,7 @@ You should see that your image build task is currently active. Once the image is
 
 Click the name of the pipeline in the breadcrumbs located at the top of the page to navigate back to the pipeline details page.
 
-![tutorial-image](./images/19-nav-breadcrumbs.png)
+![tutorial-image](./images/19-executions.png)
 
 
 
