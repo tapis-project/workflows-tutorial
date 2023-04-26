@@ -13,7 +13,7 @@ Click the `Proceed to login` link on the home page, fill out the login form with
 
 In the left sidebar of the Dashboard page, you will see tabs to pages where you will find listings of the Tapis resources your created in the previous steps. Take some time to expore the Systems and Apps section by clicking on their respective tabs.
 
-![Workflows Nav](./images/02-navbar.png)
+![tutorial-image](./images/02-navbar.png)
 
 
 ## Step 2: Create a Group
@@ -28,7 +28,7 @@ Additional users can be added to the group with either basic or administrative p
 
 Click the `Workflows` tab to navigate to the Workflows page. This is the dashboard where you can access all of your workflow resources. On this page, click the add group button in the toolbar below the workflows navbar.
 
-![Workflows Nav](./images/03-click-create-group.png)
+![tutorial-image](./images/03-click-create-group.png)
 
 ---
 
@@ -36,7 +36,7 @@ A modal will pop up with the form to create your group. Give the group a unique 
 
 NOTE: For this demonstration, we do not need to add any additional users to the group.
 
-![Workflows Nav](./images/04-create-group.png)
+![tutorial-image](./images/04-create-group.png)
 
 Now that you have a group, it's time to create a `Pipeline`.
 
@@ -48,16 +48,16 @@ Now that you have a group, it's time to create a `Pipeline`.
 
 To create your first pipeline, click the `Pipelines` button at the top of the workflows dashboard. This will take you to a page with a listing of all the groups you belong to.
 
-![Workflows Nav](./images/05-navigate-to-pipeline.png)
+![tutorial-image](./images/05-navigate-to-pipeline.png)
 
 Select the group that you just created. This will display a list of all the pipelines that belong to this group(none as of yet) as well as a button to create a pipeline. Click the `+ New Pipeline` button.
 
 
-![Workflows Nav](./images/06-click-create-pipeline.png)
+![tutorial-image](./images/06-click-create-pipeline.png)
 
 Fill out the form. Once complete, click the `Create Pipeline` button at the bottom right. Once created, exit out of the modal back to the pipelines page.
 
-![Workflows Nav](./images/07-create-pipeline.png)
+![tutorial-image](./images/07-create-pipeline.png)
 
 You should now see the pipeline you created. It's now time to create the first `Task` for the pipeline.
 
@@ -73,19 +73,19 @@ NOTE: This next step will require that you have an account on [dockerhub](https:
 
 From the `Pipelines` page, click the edit button on the pipeline that you just created. This will take you to the details page for that pipeline.
 
-![Workflows Nav](./images/08-edit-pipeline.png)
+![tutorial-image](./images/08-edit-pipeline.png)
 
 On this page, click the `+ New Task` button, this will generate a modal with a dropdown containing task types
 
-![Workflows Nav](./images/09-click-add-task.png)
+![tutorial-image](./images/09-click-add-task.png)
 
 Choose the `image_build` option and click the `Next >` button
 
-![Workflows Nav](./images/10-select-image-build.png)
+![tutorial-image](./images/10-select-image-build.png)
 
 Fill out the `task id` and `description` fields. Then for the builder dropdown, select the `kaniko` option. Kaniko is a containerized image builder that allows you to create OCI compliant images from within a container without Docker.
 
-![Workflows Nav](./images/11-select-builder.png)
+![tutorial-image](./images/11-select-builder.png)
 
 The next step is to set up the image build `context` aka the source of the image build. Once finished, the context will contain all of the data needed to access and pull the MPM source from Github.
 
@@ -95,11 +95,11 @@ First, select `github` option from the `source` dropdown. This will generate som
 * **build file path** `Dockerfile`
 * **sub path** LEAVE EMPTY!
 
-![Workflows Nav](./images/12-github-context.png)
+![tutorial-image](./images/12-github-context.png)
 
 In the `Visibility and Credentials` section of the context, select the `public` option
 
-![Workflows Nav](./images/13-context-visibility.png)
+![tutorial-image](./images/13-context-visibility.png)
 
 Next, we will need to create the `Destination` of the image. This will be the Dockerhub repository that you set up beforehand.
 
@@ -113,9 +113,33 @@ In the **image_tag** field, put any tag you want. `dev` or `latest` would be suf
 
 In the `Credential Source` section, select the `Provide credentials` radio button. This will generate 2 new fields: **username** and **access token**. For **username**, put your Dockerhub username, and for **access_token** put the Dockerhub access token.
 
-Once all fields are populated, click the `Create Task` button at the bottom right and close out the modal once the task is successfully created.
+Once all fields are populated, click the `Create Task` button at the bottom right and close the modal once the task is successfully created.
 
-![Workflows Nav](./images/14-destination.png)
+![tutorial-image](./images/14-destination.png)
+
+Now that the first task has been created, we can do an initial run of the pipeline. Click the `Run Pipeline` button in the toolbar on the `Pipeline` page. This will trigger a modal with which you can trigger your workflow
+
+![tutorial-image](./images/15-task-created.png)
+
+Run the pipeline by clicking the `Run Pipeline` button at the bottom of the modal. Once the button is pressed, the workflow definition is submitted to the Workflow Engine and the image build will start.
+
+![tutorial-image](./images/16-run-pipeline.png)
+
+You can view the status of the pipeline run by navigating to the `Pipeline Run` page for this pipeline. Click the `view` link in the `runs` column of the pipeline details table.
+
+![tutorial-image](./images/17-view-runs.png)
+
+Note that the pipeline run status is active. That mean the pipeline has successfully been submitted and the workflow engine is being processed.
+
+To view the task executions for a particular pipeline run, click the `view` link on the `executions` column of the pipeline run details table.
+
+![tutorial-image](./images/18-view-task-executions.png)
+
+You should see that your image build task is currently active. Once the image is built. We can move on to the next step of adding 2 tasks to that pipeline that will run tests over that image to ensure the image was built correctly.
+
+Click the name of the pipeline in the breadcrumbs located at the top of the page to navigate back to the pipeline details page.
+
+![tutorial-image](./images/19-nav-breadcrumbs.png)
 
 
 

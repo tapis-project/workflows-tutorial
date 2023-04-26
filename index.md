@@ -35,9 +35,9 @@ The Jetstream VMs all have the same configuration running Ubuntu 18 with all req
 * [Systems](./block1/02-systems.md)
 * [Apps](./block1/03-apps.md)
 * [Jobs](./block1/04-jobs.md)
-* [Link to Templates](https://github.com/tapis-project/workflows-tutorial/block1/templates)
 
 
 ## Workflows
 * [Intro to Tapis Workflows](./block1/05-intro-to-workflows.md)
 * [Creating a Pipeline](./block1/06-creating-a-pipeline-and-task-with-tapisui.md)
+* [Link to Templates](https://github.com/tapis-project/workflows-tutorial/tree/main/block1/templates)
