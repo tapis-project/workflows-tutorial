@@ -135,12 +135,15 @@ To view the task executions for a particular pipeline run, click the `view` link
 
 ![tutorial-image](./images/18-view-task-executions.png)
 
-You should see that your image build task is currently active. Once the image is built. We can move on to the next step of adding 2 tasks to that pipeline that will run tests over that image to ensure the image was built correctly.
+You should see that your image build task is currently active. Once the build completes, we can move on to the next step of adding 2 tasks to that pipeline that will run `mpm` and benchmarks using the new image to ensure it was built correctly.
 
 Click the name of the pipeline in the breadcrumbs located at the top of the page to navigate back to the pipeline details page.
 
 ![tutorial-image](./images/19-task-executions.png)
-<img src="./images/19-task-executions.png" alt= “tutorial-image” width="300px" height="300px">
+
+The first of these tasks will be a Tapis Job executed via the Workflow Engine in which we simply run the `mpm` command using our new image. This task will ensure that MPM was compiled correctly.
+
+Navigate back to the pipeline page and click the `+ New Task` button.
 
 
 
