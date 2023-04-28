@@ -187,7 +187,7 @@ Once the definition is complete, click the `Create Task` button.
 
 ![tutorial-image](./images/27-job-def.png)
 
-Now that all of our tasks have been created, we can submit of complete pipeline for processing.
+Now that all of our tasks have been created, we can submit the complete pipeline for processing.
 
 ![tutorial-image](./images/28-view-tasks.png)
 
