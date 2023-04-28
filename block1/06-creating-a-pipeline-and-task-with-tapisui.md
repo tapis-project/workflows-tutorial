@@ -141,19 +141,58 @@ Click the name of the pipeline in the breadcrumbs located at the top of the page
 
 ![tutorial-image](./images/19-task-executions.png)
 
-The first of these tasks will be a Tapis Job executed via the Workflow Engine in which we simply run the `mpm` command using our new image. This task will ensure that MPM was compiled correctly.
+The first of these tasks will be a Tapis Job executed via the Workflow Engine in which we simply run the `mpm` command using our new image. This task will ensure that MPM was correctly compiled.
 
 Navigate back to the pipeline page and click the `+ New Task` button.
 
 ![tutorial-image](./images/20-new-task.png)
+
+Select a the `tapis_job` option from the task type drop down and click the `Next >` button.
+
 ![tutorial-image](./images/21-select-tapis-job.png)
+
+Add an `id` and `description`
+
 ![tutorial-image](./images/22-fields.png)
+
+Now that we have an existing task in the pipleine, we can use the `Dependencies` section to create relationships between our tasks. Expand the `Dependencies` section by clicking the expand button at the top right of the section, click the `+ Add dependency` button, and choose the id of the first `image_build` task that was created.
+
 ![tutorial-image](./images/23-add-deps.png)
-![tutorial-image](./images/24-job-def-and-created.png)
+
+Copy and paste the Tapis Job JSON definition from the JSON file titled `job-mpm-run.json` from link below into the `tapis job def` JSON editor.
+
+[https://github.com/tapis-project/workflows-tutorial/tree/main/block1/](https://github.com/tapis-project/workflows-tutorial/tree/main/block1/)
+
+Be sure to replace the `execSystemId` property with the Tapis System id provided in the beginning of the tutorial.
+
+Once the definition is complete, click the `Create Task` button.
+
+![tutorial-image](./images/24-job-def-and-create.png)
+
+Navigate back to the pipeline page and add another `tapis_job` task for the uniaxial traction benchmark.
+
 ![tutorial-image](./images/25-fields.png)
+
+When adding dependencies to this task, choose the first image build task we created. When this pipeline runs, The image build will run first, and once that completes successfully, both Tapis Job tasks will run concurrently. 
+
 ![tutorial-image](./images/26-deps.png)
+
+Copy and paste the Tapis Job JSON definition from the JSON file titled `job-mpm-uniaxial-traction.json` from link below into the `tapis job def` JSON editor.
+
+[https://github.com/tapis-project/workflows-tutorial/tree/main/block1/](https://github.com/tapis-project/workflows-tutorial/tree/main/block1/)
+
+Be sure to replace the `execSystemId` property with the Tapis System id provided in the beginning of the tutorial.
+
+Once the definition is complete, click the `Create Task` button.
+
 ![tutorial-image](./images/27-job-def.png)
+
+Now that all of our tasks have been created, we can submit of complete pipeline for processing.
+
 ![tutorial-image](./images/28-view-tasks.png)
+
+Click the `Run Pipeline` button to trigger the modal, then submit the pipeline.
+
 ![tutorial-image](./images/29-final-run.png)
 
 
