@@ -1,7 +1,7 @@
 # Creating a Pipeline
 
 For this section, we will be using TapisUI to create our workflow resources.\
-This UI can be found at the following URL: [https://training.tapis.io/tapis-ui/#/](https://training.tapis.io/tapis-ui/#/)
+TapisUI can be found at the following URL: [https://training.tapis.io/tapis-ui/#/](https://training.tapis.io/tapis-ui/#/)
 
 ---
 
@@ -144,6 +144,17 @@ Click the name of the pipeline in the breadcrumbs located at the top of the page
 The first of these tasks will be a Tapis Job executed via the Workflow Engine in which we simply run the `mpm` command using our new image. This task will ensure that MPM was compiled correctly.
 
 Navigate back to the pipeline page and click the `+ New Task` button.
+
+![tutorial-image](./images/20-new-task.png)
+![tutorial-image](./images/21-select-tapis-job.png)
+![tutorial-image](./images/22-fields.png)
+![tutorial-image](./images/23-add-deps.png)
+![tutorial-image](./images/24-job-def-and-created.png)
+![tutorial-image](./images/25-fields.png)
+![tutorial-image](./images/26-deps.png)
+![tutorial-image](./images/27-job-def.png)
+![tutorial-image](./images/28-view-tasks.png)
+![tutorial-image](./images/29-final-run.png)
 
 
 
