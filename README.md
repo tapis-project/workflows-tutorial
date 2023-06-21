@@ -17,6 +17,7 @@ Presenters:
 * Nathan Freeman (TACC)
 * Anagha Jamthe (TACC)
 * Joe Stubbs (TACC)
+* Steve Black (TACC)
 
 The resources you will be using today are provided by funding from the National Science Foundation:
 
