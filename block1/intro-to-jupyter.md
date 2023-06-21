@@ -6,21 +6,20 @@ Jupyter is an open source project that provides a webapp interface for writing c
 
 ### Starting up your Jupyter Notebook Environment
 
-Your jupyter notebook server should be already running at `https://<ip>:8888`. You can reach it by going to that location in a browser window. If it is not running, then you can run `~/startjupyter.sh` to get it running again. 
+For this tutorial, we will use TACC Jupyterhub. Log into https://jupyter.tacc.cloud using your TACC credentials. 
 
-Once you open a browser with your Jupyter environment, you should see something similar to this: 
-
-<img src="../images/jupyter1.png" class="img-responsive" alt="Jupyter interface"> 
-
+Once you open a browser with your Jupyter environment, you can select the image "taccsciapps/jupyteruser-base:0.1.11" from the list and click on "Start my server"
 
 ### Creating a Notebook
 
 To create a new notebook for writing code, start by clicking 'New' in the upper right corner. From here, you will be able to choose what type of notebook you want. For this tutorial, we will be using Python 3. 
 
-<img src="../images/jupyter2.png" alt="Jupyter Notebook">
-
 Once you open a notebook, you can write and run python code. To execute a line of code, press `shift + Enter`. 
 
-### Starting a Terminal
+### Install TapiPy - A python SDK to access Tapis resources
 
-To open a terminal for writing CLI commands, click 'New' in the upper right corner. After selecting 'Terminal', a linux terminal will open. 
+In the cell type **pip install tapipy** and run the cell.
+
+From the top ribbion go to Kernel > Restart
+
+
