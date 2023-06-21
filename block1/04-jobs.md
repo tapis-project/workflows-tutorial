@@ -70,7 +70,7 @@ MPM app needs two arguments:
 ### Submit a job on VM Host
 
 ```
-job_response_vm=client.jobs.submitJob(name='mpm-job-vm',description='image classifier',appId=app_id,execSystemId=system_id_vm,appVersion= '0.0.1')
+job_response_vm=client.jobs.submitJob(name='mpm-job-vm',description='mpm-job',appId=app_id,execSystemId='tapisv3-exec-<userid>',appVersion= '0.0.1')
 print(job_response_vm.uuid)
 
 ```

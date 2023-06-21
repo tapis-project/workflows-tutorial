@@ -45,7 +45,7 @@ For more information about systems and the Systems service please see [Tapis Sys
 ## Getting Started
 
 Here we review how to create a system and how to retrieve system details. In the examples below we assume you are using
-the tenant named ``tacc`` with a base URL of ``tacc.tapis.io`` and that you have authenticated using ``tapipy``.
+the tenant named ``training`` with a base URL of ``https://training.tapis.io`` and that you have authenticated using ``tapipy``.
 During the hands-on portion of the tutorial you will create two systems, one for a VM and one for an HPC cluster.
 
 ### Creating a System
@@ -85,7 +85,7 @@ system_def = {
   "batchDefaultLogicalQueue": "tapisNormal",
 }
 ```
-where ``<userid>`` is replaced with your username. Note that although it is possible, we have not provided any login
+where ``<userid>`` is replaced with your tapis username. Note that although it is possible, we have not provided any login
 credentials in the system definition. For security reasons, it is recommended that login credentials be updated
 using a separate API call as discussed below.
 
@@ -93,7 +93,7 @@ using a separate API call as discussed below.
 ``` python
  import json
  from tapipy.tapis import Tapis
- t = Tapis(base_url='https://tacc.tapis.io', username='<userid>', password='************')
+ t = Tapis(base_url='https://training.tapis.io', username='<userid>', password='************')
  t.systems.createSystem(**system_def)
 ```
 
@@ -122,4 +122,4 @@ To retrieve details for a specific system, such as the one above:
 Now that we have covered creating and viewing a system, we are now ready to create an application that can be run on
 the system (or any other system).
 
- [Next-> Applications](../block1/apps.md)
+ [Next-> Applications](../block1/03-apps.md)

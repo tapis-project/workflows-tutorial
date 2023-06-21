@@ -95,7 +95,7 @@ where ``<userid>`` is replaced with your username.
 ``` python
  import json
  from tapipy.tapis import Tapis
- t = Tapis(base_url='https://tacc.tapis.io', username='<userid>', password='************')
+ t = Tapis(base_url='https://training.tapis.io', username='<userid>', password='************')
  t.apps.createAppVersion(**app_def)
 ```
 
@@ -111,4 +111,4 @@ To retrieve details for a specific application, such as the one above:
 ## Next Steps
 Now that we have our very first application ready to use, we are ready to run it on a system using the Jobs service. 
 
- [Next-> Jobs](./jobs.md)
+ [Next-> Jobs](./04-jobs.md)
