@@ -53,41 +53,17 @@ During the hands-on portion of the tutorial you will create two systems, one for
 Here is an example of a system definition:
 ``` python
 system_def = {
-  "id": "tapisv3-exec-<userid>",
-  "description": "Tapis v3 execution system",
+  "id": system_id_vm,
+  "description": "Test system",
   "systemType": "LINUX",
-  "host": "129.114.17.113",
-  "effectiveUserId": "${apiUserId}",
+  "host": host,
   "defaultAuthnMethod": "PASSWORD",
-  "rootDir": "/home/<userid>",
+  "rootDir": "/home/"+user_id,
   "canExec": True,
-  "jobRuntimes": [ { "runtimeType": "DOCKER" }, { "runtimeType": "SINGULARITY" } ],
+  "jobRuntimes": [ { "runtimeType": "SINGULARITY" } ],
   "jobWorkingDir": "workdir",
-  "jobIsBatch": True,
-  "batchScheduler": "SLURM",
-  "batchSchedulerProfile": "tacc",
-  "batchLogicalQueues": [
-    {
-      "name": "tapisNormal",
-      "hpcQueueName": "debug",
-      "maxJobs": 50,
-      "maxJobsPerUser": 10,
-      "minNodeCount": 1,
-      "maxNodeCount": 16,
-      "minCoresPerNode": 1,
-      "maxCoresPerNode": 68,
-      "minMemoryMB": 1,
-      "maxMemoryMB": 16384,
-      "minMinutes": 1,
-      "maxMinutes": 60
-    }
-  ],
-  "batchDefaultLogicalQueue": "tapisNormal",
 }
 ```
-where ``<userid>`` is replaced with your tapis username. Note that although it is possible, we have not provided any login
-credentials in the system definition. For security reasons, it is recommended that login credentials be updated
-using a separate API call as discussed below.
 
 #### Using ``tapipy`` to register the system:
 ``` python
@@ -100,11 +76,13 @@ using a separate API call as discussed below.
 ### Registering Credentials for a System
 Now that you have registered a system you will need to register credentials to allow Tapis to access the host.
 Various authentication methods can be used to access a system, such as PASSWORD and PKI_KEYS. Here we will cover
-registering a password.
+registering a password.  Note that although it is possible, we have not provided any login
+credentials in the system definition. For security reasons, it is recommended that login credentials be updated
+using a separate API call as discussed below.
 
 #### Using ``tapipy`` to register the credential:
 ``` python
- t.systems.createUserCredential(systemId='tapisv3-exec-<userid>', userName='<userid>', password='<password>'))
+ t.systems.createUserCredential(systemId=system_id_vm, userName='<userid>', password='<password>'))
 ```
 where ``<userid>`` is replaced with your username and ``<password>`` is replaced with your password for the host.
 
@@ -115,7 +93,7 @@ To retrieve details for a specific system, such as the one above:
 
 #### Using ``tapipy``:
 ``` python
- t.systems.getSystem(systemId='tapisv3-exec-<userid>')
+ t.systems.getSystem(systemId=system_id_vm)
 ```
 
 ## Next Steps

@@ -37,12 +37,8 @@ After these synchronous steps job processing proceeds asynchronously. Each job i
 
 Simple job submission example:
 ```
-{
-    "name": "myJob",
-    "appId": "myApp",
-    "appVersion": "1.0"
+job_response_vm=client.jobs.submitJob(name='mpm-job-vm',description='material point method',appId=app_id,execSystemId=system_id_vm,appVersion= 'dev')
 
-}
 ```
 * **appId**	- The Tapis application to execute.  This must be a valid application that the user has permission to run.
 * **name**	-  The user selected name for the job.
@@ -98,7 +94,7 @@ client.jobs.getJobList()
 ### Jobs Status
 Job status allows you to see the current state of the job.
 
-```
+```  python
 # Check the status of the job
 print("****************************************************")
 print(client.jobs.getJobStatus(jobUuid=job_uuid_vm))
@@ -112,12 +108,12 @@ Job enters into different states throughout the execution. Details about differe
 To download the output of job you need to give it jobUuid and output path. You can download a directory in the jobs’ outputPath in zip format. The outputPath is relative to archive system specified.
 
 
-```
+``` python
 # Download output of the job
 print("Job Output file:")
 
 print("****************************************************")
-jobs_output_vm= client.jobs.getJobOutputDownload(jobUuid=job_uuid_vm,outputPath='tapisjob.out')
+jobs_output_vm= client.jobs.getJobOutputDownload(jobUuid=job_uuid_vm,outputPath='stdout')
 print(jobs_output_vm)
 print("****************************************************")
 ```
@@ -131,4 +127,4 @@ HPC like system, and now you can run that tool through the cloud from anywhere! 
 At this point, it would be a good idea to connect with other developers that are publishing apps and running workflows
 through Tapis by joining the Tapis API Slack channel: [tacc-cloud.slack.com](https://bit.ly/2XHYJEk)
 
-[BACK](https://tacc-cloud.github.io/gateways21-portable-computing-cloud-hpc/)
+

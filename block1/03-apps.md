@@ -63,14 +63,14 @@ Here we review how to create an application and how to retrieve application deta
 Here is an example of an application definition:
 ``` python
 app_def = {
-    "id": "mpm-docker-<userid>",
-    "version": "0.1.0",
+    "id": app_id,
+    "version": "dev",
     "jobType": "FORK",
     "runtime": "DOCKER",
-    "description": "High-Performance Material Point Method (CB-Geo mpm)",
-    "containerImage": "tapis/mpm:0.1.0",
+    "description": "High-Performance Material Point Method (CB-Geo mpm) DEVELOPMENT version.",
+    "containerImage": "tapis/mpm:dev",
     "jobAttributes": {
-        "isMpi": false,
+        "isMpi": False,
         "parameterSet": {
             "appArgs": [
                 {"name": "directoryInputFlag", "arg": "-f", "inputMode": "FIXED"},
