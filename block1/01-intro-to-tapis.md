@@ -3,7 +3,6 @@
 [Tapis](https://docs.google.com/presentation/d/1Jb3a43n4PJoihpK6X44aB0UC4XRWKbM8OKe-Xay-5F0/edit?usp=sharing)
 ​
 ### Tapis Provides A Cyberinfrastructure Platform For Science Allowing:
-​
 #### IDENTITY AND ACCESS MANAGEMENT
 Leverage OAuth2 and OpenID Connect, the mechanisms in place for controlling and securing access on the web.
 
@@ -23,7 +22,6 @@ All this is hosted for you, you don't have to stand up your own servers to acces
 
 * [Cyverse](https://cyerse.org)
 * [Design-safe](https://www.designsafe-ci.org/#!#research)
-* [iMicrobe](https://www.imicrobe.us)
 * [VDJ](https://vdjserver.org/)
 * [Ike Wai](ikewai.org)
 
@@ -37,7 +35,7 @@ That means you can use CURL to access any of the API functions from a command li
 ​
 ### Tapis tools
 ​
-While CURL is straightforward it is not the most handy. Tapis has additional tools to make using it simplier, such as the `tapipy` Python library.
+While CURL is straightforward it is not the most handy. Tapis has additional tools to make using it simplier, such as the `tapipy` Python library, Tapis CLI, Tapis UI.
 ​
 These tools make it easier to utilize and build complex workflows and applications with Tapis using some of the programming and scripting skills you may already have.
 
@@ -48,5 +46,4 @@ You don't have to do a lot of complex things to use Tapis.  If you just want som
 ### Full Tapis Documentation
 ​
 Full documentation and guides for using Tapis can be found here:
-https://tacc-cloud.readthedocs.io/projects/agave/en/latest/index.html
-​
+https://tapis.readthedocs.io/en/latest/​
