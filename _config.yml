@@ -21,3 +21,6 @@ nav:
  - Intro to Tapis Jobs: ./block1/04-jobs.md 
 - Notebook Part 1:
   - Notebook: ./block1/Tapis_workflows_mpm.ipynb
+
+
+theme: jekyll-theme-minimal
