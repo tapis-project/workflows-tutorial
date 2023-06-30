@@ -6,24 +6,18 @@ remote_theme: marella/jekyll-theme-documentation
 
 permalink: pretty
 nav:
- 
 - Intro to Tapis and Workflows:
   - Intro to Tapis: ./block1/01-intor-to-tapis.md
   - Intro to Workflows: ./block1/05-intro-to-workflows.md
-
 - Intro to Jupyter:
  - Introduction to Jupyter: ./block1/intro-to-jupyter.md
  - Starting a Jupyter Notebook: ./block1/intro-to-jupyter.md#starting-up-your-jupyter-notebook-environment
- - Creating a Notebook: ./block1/intro-to-jupyter.md#creating-a-notebook
-  
+ - Creating a Notebook: ./block1/intro-to-jupyter.md#creating-a-notebook  
 - Tapis Systems:
  - Intro to Tapis Systems: ./block1/02-systems.md
-
 - Tapis Apps:
-  - Intro to Apps: ./block1/03-apps.md
-  
+  - Intro to Apps: ./block1/03-apps.md  
 - Tapis Jobs:
- - Intro to Tapis Jobs: ./block1/04-jobs.md
- 
+ - Intro to Tapis Jobs: ./block1/04-jobs.md 
 - Notebook Part 1:
   - Notebook: ./block1/Tapis_workflows_mpm.ipynb
