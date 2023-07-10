@@ -20,7 +20,7 @@ nav:
   - Intro to Apps: ./block1/03-apps.md  
 - Tapis Jobs:
   - Intro to Tapis Jobs: ./block1/04-jobs.md 
-- Notebook Part 1:
+- Notebook:
   - Notebook: ./block1/Tapis_workflows_mpm.ipynb
 
 theme: jekyll-theme-minimal
