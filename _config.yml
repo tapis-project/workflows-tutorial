@@ -1,6 +1,4 @@
-# remote_theme: marella/jekyll-theme-documentation
 theme: jekyll-theme-minimal
-# remote_theme: pawamoy/jekyll-readthedocs
 
 #theme: jekyll-theme-cayman
 #theme: jekyll-theme-minimal
@@ -20,6 +18,7 @@ nav:
   - Intro to Apps: ./block1/03-apps.md  
 - Tapis Jobs:
   - Intro to Tapis Jobs: ./block1/04-jobs.md 
-- Notebook Part 1:
+- Notebook:
   - Notebook: ./block1/Tapis_workflows_mpm.ipynb
 
+theme: jekyll-theme-minimal
