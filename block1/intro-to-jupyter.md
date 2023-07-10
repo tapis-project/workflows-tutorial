@@ -7,7 +7,7 @@ Jupyter is an open source project that provides a webapp interface for writing c
 ### Download Notebook
 
 Dowload the Jupyter Notebook by clicking the link below:
-[Download Notebook](./block1/Tapis_workflows_mpm.ipynb)
+[Download Notebook](Tapis_workflows_mpm.ipynb)
 
 ### Starting up your Jupyter Notebook Environment
 
