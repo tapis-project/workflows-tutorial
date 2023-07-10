@@ -28,7 +28,7 @@ You should have recieved a paper with a training account for Jetstream Virtual M
 The Jetstream VMs all have the same configuration running Ubuntu 18 with all required software (Docker, Singularity).
 
 ## Intro to Tapis and Workflows
-* [Intro to Tapis](./block1/01-intor-to-tapis.md)
+* [Intro to Tapis](./block1/01-intro-to-tapis.md)
 * [Intro to Workflows](./block1/05-intro-to-workflows.md)
 
 ## Intro to Jupyter
