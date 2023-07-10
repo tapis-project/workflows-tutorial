@@ -50,6 +50,6 @@ The Jetstream VMs all have the same configuration running Ubuntu 18 with all req
 ## Tapis Workflows
 * [Create a CI/CD pipeline with With Tapis Workflows](./block1/06-creating-a-pipeline-and-task-with-tapisui.md)
 
-## Notbook
+## Jupyter Notebook
 * [Notebook](./block1/Tapis_workflows_mpm.ipynb)
  

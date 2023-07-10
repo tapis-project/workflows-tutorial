@@ -10,16 +10,16 @@ For this tutorial, we will use [TACC Jupyterhub](https://jupyter.tacc.cloud) usi
 
 Once you open a browser with your Jupyter environment, you can select the image "taccsciapps/jupyteruser-base:0.1.11" from the list and click on "Start my server"
 
-### Creating a Notebook
+### Download Notebook
 
-To create a new notebook for writing code, start by clicking 'New' in the upper right corner. From here, you will be able to choose what type of notebook you want. For this tutorial, we will be using Python 3. 
+Dowload the Jupyter Notebook by clicking the link below:
+[Download Notebook](./block1/Tapis_workflows_mpm.ipynb)
 
-Once you open a notebook, you can write and run python code. To execute a line of code, press `shift + Enter`. 
+### Starting Notebook Environment
 
-### Install TapiPy - A python SDK to access Tapis resources
 
-In the cell type **pip install tapipy** and run the cell.
+### Uploading your notebook
 
-Once **tapipy** is installed you will have to restart the Kernel. From the top ribbion go to Kernel > Restart
+
 
 
