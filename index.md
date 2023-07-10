@@ -2,11 +2,10 @@
 
 ## Schedule
 
-* 9:00 AM - Introduction to Tapis and Workflows for CI/CD
-* 9:45 AM - Brief intro to CI/CD
-* 10:00 AM - Image build with Workflows via Jupyter
+* 9:10 AM - Introduction to Tapis and Workflows for CI/CD
+* 9:45 AM - Tapis Systems, Apps, Jobs 
 * 10:30 AM - 10:40 AM Break 
-* 10:45 AM Tapis Systems, Apps, Jobs 
+* 10:45 AM - Brief introduction to CI/CD
 * 11:15 AM Automating Validation Steps within CI/CD Workflows using TapisUI
 * 11:45 AM Use cases and Q/A discussion
 * 12:00 PM End of Tutorial
@@ -16,8 +15,8 @@
 Presenters: 
 * Nathan Freeman (TACC)
 * Anagha Jamthe (TACC)
-* Joe Stubbs (TACC)
 * Steve Black (TACC)
+* Joe Stubbs (TACC)
 
 The resources you will be using today are provided by funding from the National Science Foundation:
 
@@ -33,11 +32,7 @@ The Jetstream VMs all have the same configuration running Ubuntu 18 with all req
 
 ## Intro to Jupyter
 * [Introduction to Jupyter](./block1/intro-to-jupyter.md)
-* [Starting a Jupyter Notebook](./block1/intro-to-jupyter.md#starting-up-your-jupyter-notebook-environment)
-* [Creating a Notebook](./block1/intro-to-jupyter.md#creating-a-notebook)
-  
-
-
+ 
 ## Tapis Systems
 * [Intro to Tapis Systems](./block1/02-systems.md)
 
