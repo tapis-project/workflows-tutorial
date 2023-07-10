@@ -8,7 +8,7 @@ theme: jekyll-theme-minimal
 permalink: pretty
 nav:
 - Intro to Tapis and Workflows:
-  - Intro to Tapis: ./block1/01-intor-to-tapis.md
+  - Intro to Tapis: ./block1/01-intro-to-tapis.md
   - Intro to Workflows: ./block1/05-intro-to-workflows.md
 - Intro to Jupyter:
   - Introduction to Jupyter: ./block1/intro-to-jupyter.md
