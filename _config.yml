@@ -1,6 +1,6 @@
 # remote_theme: marella/jekyll-theme-documentation
-# theme: jekyll-theme-minimal
-remote_theme: pawamoy/jekyll-readthedocs
+theme: jekyll-theme-minimal
+# remote_theme: pawamoy/jekyll-readthedocs
 
 #theme: jekyll-theme-cayman
 #theme: jekyll-theme-minimal
