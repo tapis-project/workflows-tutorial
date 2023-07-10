@@ -47,3 +47,5 @@ You don't have to do a lot of complex things to use Tapis.  If you just want som
 ​
 Full documentation and guides for using Tapis can be found here:
 https://tapis.readthedocs.io/en/latest/​
+
+[Next-> Intro to Workflows](./05-intro-to-workflows.md)

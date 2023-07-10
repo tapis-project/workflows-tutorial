@@ -127,4 +127,6 @@ HPC like system, and now you can run that tool through the cloud from anywhere! 
 At this point, it would be a good idea to connect with other developers that are publishing apps and running workflows
 through Tapis by joining the Tapis API Slack channel: [tacc-cloud.slack.com](https://bit.ly/2XHYJEk)
 
+[Next-> Workflows](./06-creating-a-pipeline-and-task-with-tapisui.md)
+
 
