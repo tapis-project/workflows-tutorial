@@ -20,12 +20,6 @@ Presenters:
 
 The resources you will be using today are provided by funding from the National Science Foundation:
 
-* [Jetstream](https://jetstream-cloud.org/) is a cloud service for research that provides on-demand, user-controled, Virtual Machines (VMs) - you can request and account after the workshop using these [instructions](https://iujetstream.atlassian.net/wiki/spaces/JWT/pages/76150553/Get+a+Jetstream+Trial+Access+account).  
-
-You should have recieved a paper with a training account for Jetstream Virtual Machine(VM) IP with username and password for that VM.  These are the credentials that we will use today and are only valid for todays workshop.
-
-The Jetstream VMs all have the same configuration running Ubuntu 18 with all required software (Docker, Singularity).
-
 ## Intro to Tapis and Workflows
 * [Intro to Tapis](./block1/01-intro-to-tapis.md)
 * [Intro to Workflows](./block1/05-intro-to-workflows.md)
