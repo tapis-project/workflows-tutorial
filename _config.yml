@@ -1,4 +1,5 @@
-theme: jekyll-theme-minimal
+# theme: jekyll-theme-minimal
+remote_theme: marella/jekyll-them-documentation
 
 #theme: jekyll-theme-cayman
 #theme: jekyll-theme-minimal
