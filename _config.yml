@@ -8,8 +8,6 @@ nav:
   - Intro to Workflows: ./block1/05-intro-to-workflows
 - Intro to Jupyter:
   - Introduction to Jupyter: ./block1/intro-to-jupyter
-  - Starting a Jupyter Notebook: ./block1/intro-to-jupyter#starting-up-your-jupyter-notebook-environment
-  - Creating a Notebook: ./block1/intro-to-jupyter#creating-a-notebook  
 - Tapis Systems:
   - Intro to Tapis Systems: ./block1/02-systems
 - Tapis Apps:
