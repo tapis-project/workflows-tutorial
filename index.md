@@ -37,7 +37,7 @@ The resources you will be using today are provided by funding from the National 
 * [Intro to Tapis Jobs](./block1/04-jobs.md)
 
 ## Tapis Workflows
-* [Create a CI/CD pipeline with With Tapis Workflows](./block1/06-creating-a-pipeline-and-task-with-tapisui.md)
+* [Create a CI/CD pipeline with With Tapis Workflows](./block1/Tapis_workflows_mpm.ipynb)
 
 ## Jupyter Notebook
 * [Notebook](./block1/Tapis_workflows_mpm.ipynb)
