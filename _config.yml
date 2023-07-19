@@ -15,8 +15,8 @@ nav:
 - Tapis Jobs:
   - Intro to Tapis Jobs: ./block1/04-jobs
 - Tapis Workflows:
-  - Intro to Tapis Jobs: ./block1/05-intro-to-workflows
-- Jupyter Notebook:
-  - Notebook: ./block1/Tapis_workflows_mpm.ipynb
+  - Intro to Tapis Workflows: ./block1/05-intro-to-workflows
+#- Jupyter Notebook:
+#  - Notebook: ./block1/Tapis_workflows_mpm.ipynb
 
 theme: jekyll-theme-minimal
