@@ -1,14 +1,14 @@
-# Portable, Reproducible High Performance Computing In the Cloud
+# Best Practices of CI/CD for High Performance Computation with Tapis Workflows API
 
 ## Schedule
 
-* 9:10 AM - Introduction to Tapis and Workflows for CI/CD
-* 9:45 AM - Tapis Systems, Apps, Jobs 
-* 10:30 AM - 10:40 AM Break 
-* 10:45 AM - Brief introduction to CI/CD
-* 11:15 AM Automating Validation Steps within CI/CD Workflows using TapisUI
-* 11:45 AM Use cases and Q/A discussion
-* 12:00 PM End of Tutorial
+* 1:30 PM - Introduction to Tapis and Workflows for CI/CD
+* 1:45 PM - Tapis Systems, Apps, Jobs 
+* 2:30 PM - 10:40 AM Break 
+* 2:45 PM - Brief introduction to CI/CD
+* 3:15 PM Automating Validation Steps within CI/CD Workflows using TapisUI
+* 3:45 PM Use cases and Q/A discussion
+* 4:30 PM End of Tutorial
 
 
 ## Workshop Introduction
@@ -17,6 +17,8 @@ Presenters:
 * Anagha Jamthe (TACC)
 * Steve Black (TACC)
 * Joe Stubbs (TACC)
+* Sean Cleveland (UH)
+* Mike Packard (TACC)
 
 The resources you will be using today are provided by funding from the National Science Foundation:
 
