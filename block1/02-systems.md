@@ -27,7 +27,7 @@ At a high level a system represents the following information:
 
 * **id** - A short descriptive name for the system that is unique within the tenant.
 * **description** - An optional more verbose description for the system.
-* **systemType** - Type of system: LINUX, S3, IRODS. Support for GLOBUS is under development.
+* **systemType** - Type of system: LINUX, S3, IRODS or GLOBUS.
 * **owner** - A specific user set at system creation. By default, this is ``${apiUserId}``, the user making the request to
               create the system.
 * **host** Host name or IP address.
@@ -38,7 +38,7 @@ At a high level a system represents the following information:
 * **job execution attributes** - Various attributes related to job execution such as *jobRuntimes*, *jobWorkingDir*, etc.
 
 Note that a system may be created as a storage-only resource (*canExec=false*) or as a system that can be used for both
-execution and storage (*canExec=True*).
+execution and storage (*canExec=true*).
 
 For more information about systems and the Systems service please see [Tapis Systems Service documentation](https://tapis.readthedocs.io/en/latest/technical/systems.html).
 

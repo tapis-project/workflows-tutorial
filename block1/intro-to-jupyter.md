@@ -11,13 +11,13 @@ Dowload the Jupyter Notebook by clicking the link below:
 
 ### Starting up your Jupyter Notebook Environment
 
-For this tutorial, we will use [TACC Jupyterhub](https://jupyter.tacc.cloud) using your TACC credentials. 
+For this tutorial, we will use [Google Collab](https://colab.research.google.com) 
+You may login with your google accounts.
 
-Once you open a browser with your Jupyter environment, you can select the image "HETDEX Public" from the list and click on "Start my server"
 
 ### Uploading your notebook
 
-Once your server starts you may upload the Tapis_workflows_mpm.ipynb notebook and open it to run. 
+On successful login, upload the Tapis_workflows_mpm.ipynb notebook and open it to run. 
 
 
 
