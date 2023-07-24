@@ -6,7 +6,7 @@
 * 1:45 PM - Tapis Systems, Apps, Jobs 
 * 2:30 PM - 10:40 AM Break 
 * 2:45 PM - Brief introduction to CI/CD
-* 3:15 PM Automating Validation Steps within CI/CD Workflows using TapisUI
+* 3:15 PM Automating Validation Steps within CI/CD Workflows 
 * 3:45 PM Use cases and Q/A discussion
 * 4:30 PM End of Tutorial
 
