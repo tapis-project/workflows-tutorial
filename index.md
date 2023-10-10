@@ -2,13 +2,11 @@
 
 ## Schedule
 
-* 1:30 PM - Introduction to Tapis and Workflows for CI/CD
-* 1:45 PM - Tapis Systems, Apps, Jobs 
-* 2:30 PM - 10:40 AM Break 
-* 2:45 PM - Brief introduction to CI/CD
-* 3:15 PM Automating Validation Steps within CI/CD Workflows
-* 3:45 PM Use cases and Q/A discussion
-* 4:30 PM End of Tutorial
+* Introduction to Tapis and Workflows for CI/CD
+* Tapis Systems, Apps, Jobs 
+* Brief introduction to CI/CD
+* Automating Validation Steps within CI/CD Workflows
+* Use cases and Q/A discussion
 
 
 ## Workshop Introduction
@@ -17,7 +15,6 @@ Presenters:
 * Anagha Jamthe (TACC)
 * Steve Black (TACC)
 * Joe Stubbs (TACC)
-* Sean Cleveland (UH)
 * Mike Packard (TACC)
 
 The resources you will be using today are provided by funding from the National Science Foundation:
