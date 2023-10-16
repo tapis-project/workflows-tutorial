@@ -1,12 +1,12 @@
 # CI/CD for High Performance Computation with Tapis Workflows API
 
 ## Schedule
-
-* Introduction to Tapis and Workflows for CI/CD
-* Tapis Systems, Apps, Jobs 
-* Brief introduction to CI/CD
-* Automating Validation Steps within CI/CD Workflows
-* Use cases and Q/A discussion
+* 12:00 PM Distributing Training accounts
+* 12:10 PM Introduction to Tapis and Workflows for CI/CD
+* 12:40 PM Tapis Systems, Apps, Jobs 
+* 1:40 PM Brief introduction to CI/CD
+* 2:40 PM Automating Validation Steps within CI/CD Workflows
+* 3:00 PM Use cases and Q/A discussion
 
 
 ## Workshop Introduction
