@@ -23,7 +23,7 @@ All this is hosted for you, you don't have to stand up your own servers to acces
 * [Cyverse](https://cyverse.org)
 * [Design-safe](https://www.designsafe-ci.org/#!#research)
 * [VDJ](https://vdjserver.org/)
-* [Ike Wai](https://ikewai.org)
+
 
 All these gateways leverage Tapis to provide access to data, software and compute resources.
 ​
@@ -45,7 +45,6 @@ You don't have to do a lot of complex things to use Tapis.  If you just want som
 ​
 ### Full Tapis Documentation
 ​
-Full documentation and guides for using Tapis can be found here:
-https://tapis.readthedocs.io/en/latest/​
+Full documentation and guides for using Tapis can be found [here](https://tapis.readthedocs.io/en/latest/​)
 
 [Next-> Intro to Workflows](./05-intro-to-workflows.md)
