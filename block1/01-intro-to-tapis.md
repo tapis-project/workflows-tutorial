@@ -20,10 +20,10 @@ All this is hosted for you, you don't have to stand up your own servers to acces
 
 ### A Number of Science Gateways and projects leverage Tapis:
 
-* [Cyverse](https://cyerse.org)
+* [Cyverse](https://cyverse.org)
 * [Design-safe](https://www.designsafe-ci.org/#!#research)
 * [VDJ](https://vdjserver.org/)
-* [Ike Wai](ikewai.org)
+* [Ike Wai](https://ikewai.org)
 
 All these gateways leverage Tapis to provide access to data, software and compute resources.
 ​
